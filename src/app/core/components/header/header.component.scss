@@ -1,6 +1,5 @@
 .navbar {
     background: linear-gradient(#010D0080, #0D0D0D80);
-    //background-size: cover;
     backdrop-filter: blur(5px);
   }
 
@@ -17,12 +16,11 @@
   .navbar-toggler:hover,
   .navbar-toggler:focus,
   .navbar-toggler:active{
-    display: flex;
 
-    //background-color: #fff; /* Change background color on hover */
-    border-color: #B8C0D9; /* Change border color on hover */
+    //background-color: #fff;
+    border-color: #B8C0D9; 
     box-shadow: none;
-    //color: #000; /* Change text color on hover */
+    //color: #000;
     align-items: center;
     justify-content: center;
   }
@@ -31,6 +29,6 @@
   .navbar-toggler-icon {
     width: 1.2rem;
     height: auto;
-    //background-color: #fff; /* Set color of the navbar toggler icon */
+    //background-color: #fff; 
     color:#f3f3f3;
   }

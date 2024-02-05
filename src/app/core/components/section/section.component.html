@@ -1,0 +1,17 @@
+<div class="my-section">
+    <div class="row">
+        <h3 class="my-section-title col-md-10">
+            {{ title }}
+        </h3>
+        @if(link){
+        <a  href="{{ link }}" target="_blank" class="my-section-link ms-auto col-md-2">
+            <i class="fa fa-link
+            "></i>
+            see more
+        </a>
+    }
+    </div>
+    <div class="my-section-detail">
+        <ng-content></ng-content>
+    </div>
+</div>

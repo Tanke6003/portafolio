@@ -1,3 +1,4 @@
+
 <div class="container main">
     <div class="row introduce my-section">
         <div class="col-md-2 my-photo-section">
@@ -9,42 +10,24 @@
             <h2 class="my-title">Full Stack Developer</h2>
             <p class="my-description">
                 I'm a Full Stack Developer with a passion for creating and developing web applications.
-                I have experience in developing web applications using modern technologies such as Angular, Node, Express and Typescript.
-                I'm also experienced in developing RESTful APIs and working with databases such as MSSQL and MySQL and another projects with c# and netcore.
+                I have experience in developing web applications using modern technologies such as Angular, Node,
+                Express and Typescript.
+                I'm also experienced in developing RESTful APIs and working with databases such as MSSQL and MySQL and
+                another projects with c# and netcore.
                 I'm always looking for new challenges and opportunities to grow as a developer and learn.
             </p>
         </div>
     </div>
-    <div class="row social my-section">
+    <div class="row">
         <div class="col-md-12">
-            <h3 class="my-section-title" >
-             Socials
-            </h3>
-            <div class="my-section-detail">
-                <a href="https://www.linkedin.com/in/ruben-farias-7a3a3a1a3/" target="_blank" class="social-link linkedin" >
-                    <i class="fa fa-linkedin-square"></i>
-                    LinkedIn
-                </a>
-                <!-- youtube -->
-                <a href="https://www.youtube.com/channel/UC9m3Z3v3n3J" target="_blank" class="social-link youtube">
-                    <i class="fa fa-youtube"></i>
-                    Youtube
-                </a>
-                <!-- github -->
-                <a href="" target="_blank" class="social-link github">
-                    <i class="fa fa-github"></i>
-                    Github
-                </a>
-            </div>
-
+            <app-section title="Projects">
+                
+            </app-section>
         </div>
     </div>
-    <div class="row skills my-section">
+    <div class="row">
         <div class="col-md-12">
-            <h3 class="my-section-title">
-                Skills
-            </h3>
-            <div class="my-section-detail">
+            <app-section title="Skills">
                 <div class="row justify-content-around">
                     <div class="col-md-6">
                         <h4>Hard Skills</h4>
@@ -58,14 +41,14 @@
                             <li>Node</li>
                             <li>Express</li>
                             <li>C#</li>
-                            <li>.Net Core</li>        
+                            <li>.Net Core</li>
                             <li>SQL</li>
                             <li>MySQL</li>
                             <li>MSSQL</li>
                             <li>Git</li>
                             <li>RESTful APIs</li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="col-md-6">
                         <h4>Soft Skills</h4>
                         <!-- todo: replace by componente gague -->
@@ -78,10 +61,38 @@
                             <li>Leadership</li>
                             <li>Attention to Detail</li>
                             <li>Organization</li>
-                        </ul> 
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            </div>
-    
+            </app-section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <app-section title="Socials" link="vermas">
+                <a href="https://www.linkedin.com/in/ruben-farias-7a3a3a1a3/" target="_blank"
+                    class="social-link linkedin">
+                    <i class="fa fa-linkedin-square"></i>
+                    LinkedIn
+                </a>
+
+                <a href="https://www.youtube.com/channel/UC9m3Z3v3n3J" target="_blank" class="social-link youtube">
+                    <i class="fa fa-youtube"></i>
+                    Youtube
+                </a>
+
+                <a href="" target="_blank" class="social-link github">
+                    <i class="fa fa-github"></i>
+                    Github
+                </a>
+            </app-section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <app-section title="Contact">
+                <app-email-contact email="Ruben.Farias.1999@gmail.com"></app-email-contact>
+            </app-section>
+        </div>
     </div>
 </div>
