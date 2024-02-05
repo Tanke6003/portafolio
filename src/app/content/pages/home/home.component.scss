@@ -23,7 +23,23 @@
         border-radius: 50%; /* Para una imagen redonda, puedes ajustar según tu preferencia */
     }
 }
-.skills-list{
+// .skills-list{
+//     display: flex;
+//     flex-wrap: wrap;
+//     color: #020202;
+//     font-weight: 700;
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+//     li{
+//         margin: 0.5rem 0.5rem 0.5rem 0;
+//         padding: 0.5rem;
+//         background-color: #f5f5f5;
+//         border-radius: 0.3rem;
+//         font-size: 1rem;
+//     }
+// }
+.skills-list {
     display: flex;
     flex-wrap: wrap;
     color: #020202;
@@ -31,21 +47,28 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    li{
-        margin: 0.5rem 0.5rem 0.5rem 0;
-        padding: 0.5rem;
-        background-color: #f5f5f5;
-        border-radius: 0.3rem;
-        font-size: 1rem;
+  
+    li {
+      flex: 1; // Para que todos los elementos tengan la misma longitud
+      margin: 0.5rem;
+      padding: 0.5rem;
+      background-color: #f5f5f5;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center; // Para centrar el texto horizontalmente
+      align-items: center; // Para centrar el texto verticalmente
     }
-}
+  }
+  
 
 a{
     color: #f5f5f5;
     text-decoration: none;
     &:hover{
-        color: #f5f5f5;
-        text-decoration: underline;
+        color: #ffffff;
+        //text-decoration: underline;
+
     }
 }
 .social-link{
@@ -65,15 +88,24 @@ a{
 }
 a.linkedin {
     background-color: #0077b5; /* LinkedIn blue color */
+    &:hover{
+        background-color: #0a66c2;
+    }
 }
 
 /* YouTube */
 a.youtube {
     background-color: #ff0000; /* YouTube red color */
+    &:hover{
+        background-color: #e40101;
+    }
 }
 
 /* GitHub */
 a.github {
     background-color: #000000; /* GitHub black color */
+    &:hover{
+        background-color: #24292e;
+    }
 }
 

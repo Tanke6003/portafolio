@@ -1,22 +1,26 @@
 
 <div class="container main">
-    <div class="row introduce my-section">
-        <div class="col-md-2 my-photo-section">
-            <!-- Agrega una imagen aquí -->
-            <img src="../assets/cv.jpg" alt="Tu Foto" class="my-photo">
-        </div>
-        <div class="col-md-10">
-            <h1 class="my-name">Ruben Farias</h1>
-            <h2 class="my-title">Full Stack Developer</h2>
-            <p class="my-description">
-                I'm a Full Stack Developer with a passion for creating and developing web applications.
-                I have experience in developing web applications using modern technologies such as Angular, Node,
-                Express and Typescript.
-                I'm also experienced in developing RESTful APIs and working with databases such as MSSQL and MySQL and
-                another projects with c# and netcore.
-                I'm always looking for new challenges and opportunities to grow as a developer and learn.
-            </p>
-        </div>
+    <div class="row introduce">
+        <app-section>
+            <div class="row">
+                <div class="col-md-2 my-photo-section">
+                    <!-- Agrega una imagen aquí -->
+                    <img src="../assets/cv.jpg" alt="Tu Foto" class="my-photo">
+                </div>
+                <div class="col-md-10">
+                    <h1 class="my-name">Ruben Farias</h1>
+                    <h2 class="my-title">Full Stack Developer</h2>
+                    <p class="my-description">
+                        I'm a Full Stack Developer with a passion for creating and developing web applications.
+                        I have experience in developing web applications using modern technologies such as Angular, Node,
+                        Express and Typescript.
+                        I'm also experienced in developing RESTful APIs and working with databases such as MSSQL and MySQL and
+                        another projects with c# and netcore.
+                        I'm always looking for new challenges and opportunities to grow as a developer and learn.
+                    </p>
+                </div>
+            </div>
+        </app-section>
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -69,19 +73,19 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <app-section title="Socials" link="vermas">
-                <a href="https://www.linkedin.com/in/ruben-farias-7a3a3a1a3/" target="_blank"
-                    class="social-link linkedin">
+            <app-section title="Socials" >
+                <a href="https://www.linkedin.com/in/ruben-de-jesus-farias-de-alba-198ba0211/" target="_blank"
+                    class="social-link linkedin" style="min-width: 6rem;">
                     <i class="fa fa-linkedin-square"></i>
                     LinkedIn
                 </a>
 
-                <a href="https://www.youtube.com/channel/UC9m3Z3v3n3J" target="_blank" class="social-link youtube">
+                <a href="https://www.youtube.com/channel/UC9m3Z3v3n3J" target="_blank" class="social-link youtube" style="min-width: 8rem;">
                     <i class="fa fa-youtube"></i>
                     Youtube
                 </a>
 
-                <a href="" target="_blank" class="social-link github">
+                <a href="https://github.com/Tanke6003" target="_blank" class="social-link github" style="min-width: 8rem;">
                     <i class="fa fa-github"></i>
                     Github
                 </a>
@@ -89,9 +93,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <app-section title="Contact">
-                <app-email-contact email="Ruben.Farias.1999@gmail.com"></app-email-contact>
+                        <app-email-contact email="Ruben.Farias.1999@gmail.com"></app-email-contact>
+            </app-section>
+        </div>
+        <div class="col-md-6">
+            <app-section title="CV">
+                        <app-email-contact email="Ruben.Farias.1999@gmail.com"></app-email-contact>
             </app-section>
         </div>
     </div>
